@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body style="background-color:rgb(255, 248, 235)";>
+
+    <h1>Catalyst Coffe</h1>
+    <hr aria-hidden="true" class="sb-rule sb-rule--thin pb5">
+    <h2>Menu</h2>
+    <hr aria-hidden="true" class="sb-rule sb-rule--thin pb5">
+<div class="align">
+    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/Nn-d0uFv-s0u8XC8rBQ6bw/o.jpg" width="100" height="100" ></img>
+    <h3>Hot Coffee</h3> 
+</div>
+    <h5>House</h5> <p id="price2">$3-$3.50</p>
+    <p><div class="dropdown">
+        <button class="dropbtn">Size</button>
+        <div class="dropdown-content">
+          <a href="#" id="yes1" onclick="changePrice1('10oz')">10oz</a>
+          <a href="#" id="no1" onclick="changePrice1('16oz')">16oz</a>
+        </div>
+      </div> </p>
+<div class="align">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZn6M4iMgLtI00EjE6FFYK5nUibnkJu-aMzA&usqp=CAU" width="50" height="50"> </img>
+    <h5>Long Black</h5> <p id=price3>$3-$3.50</p>
+    </div>
+    <p><div class="dropdown">
+        <button class="dropbtn">Size</button>
+        <div class="dropdown-content">
+          <a href="#" id="yes2" onclick="changePrice2('10oz')">10oz</a>
+          <a href="#" id="no2" onclick="changePrice2('16oz')">16oz</a>
+        </div>
+      </div> </p>
+<div class="align">
+    <img src="https://www.cleaneatingkitchen.com/wp-content/uploads/2022/05/iced-coffee-served-with-bowl-of-coffee-beans.jpg" id="coldCoffee" width="100" height="100">
+    <h3>Cold Coffee</h3>
+</div>
+<div class="options">
+    <h5>House</h5> <p id="price4">$3.50-$4</p>
+    <p><div class="dropdown">
+        <button class="dropbtn">Size</button>
+        <div class="dropdown-content">
+          <a href="#"  id="yes3" onclick="changePrice3('16oz')" >16oz</a>
+          <a href="#" id="no3" onclick="changePrice3('20oz')">20oz</a>
+        </div>
+      </div> </p>
+    <h5>Cowboy</h5> <p id="price5">$4-$4.50</p>
+    <p><div class="dropdown">
+        <button class="dropbtn">Size</button> 
+        <div class="dropdown-content">
+          <a href="#" id="yes4" onclick="changePrice4('16oz')">16oz</a>
+          <a href="#" id="no4" onclick="changePrice4('20oz')">20oz</a>
+        </div>
+      </div> </p>
+</div>
+<div class="align">
+    <img src="https://assets.dmagstatic.com/wp-content/uploads/2018/02/3758532351_743d941652_o.jpg" id="specialityDrinks" width="100" height="100">
+    <h3>Speciality Drinks</h3>
+</div>
+    <h5>Flat White</h5> <p id="price6">$4-$5.50</p>
+    <p><div class="dropdown">
+        <button class="dropbtn">Size</button>
+        <div class="dropdown-content">
+          <a href="#" id="yes5" onclick="changePrice5('10oz')">10oz</a>
+          <a href="#" id="no5" onclick="changePrice5('16oz')">16oz</a>
+        </div>
+      </div> </p>
+      <div class="alien2">
+      <h5>Cappuccino</h5><p>
+      <p id="price1">$4-$5.50</p>
+    </div>
+      <p>
+        <div class="dropdown">
+          <button class="dropbtn">Size</button>
+          <div class="dropdown-content">
+            <a href="#" id="yes" onclick="changePrice('10oz')">10oz</a>
+            <a href="#" id="no" onclick="changePrice('16oz')">16oz</a>
+          </div>
+        </div>
+      </p>      
+    <h5>Espresso</h5> <p>$3.50</p>
+    <p><div class="dropdown">
+        <button class="dropbtn">Size</button>
+        <div class="dropdown-content">
+          <a href="#">10oz</a>
+        </div>
+      </div> </p>
+<div class="align"> 
+    <img src="https://cakewhiz.com/wp-content/uploads/2020/05/Iced-Vanilla-Latte-Recipe.jpg" id="lattes" width="100" height="100">
+    <h3>Lattes</h3>
+    </div>
+    <h5>Hot Latte</h5>
+    <p id="price7">$4-$5.50</p>
+    <div class="dropdown">
+      <button class="dropbtn">Size</button>
+      <div class="dropdown-content">
+        <a href="#" id="yes6" onclick="changePrice6('10oz')">10oz</a>
+        <a href="#" id="no6" onclick="changePrice6('16oz')">16oz</a>
+      </div>
+    </div>
+    
+    <div class="dropdown1">
+      <button class="dropbtn1">Milk</button>
+      <div class="dropdown-content1">
+        <a href="#" id="milk1" class="altMilk" onclick="changePrice8('Oat')">Oat $0.75</a>
+        <a href="#" >Whole</a>
+        <a href="#">Low-Fat</a>
+        <a href="#" class="altMilk" onclick="changePrice8('Almond')">Almond $0.75</a>
+      </div>
+    </div>
+    
+    
+    <h5>Iced Latte</h5> <p price id="price8">$5.50-$6</p>
+    <p><div class="dropdown">
+        <button class="dropbtn">Size</button>
+        <div class="dropdown-content">
+          <a href="#" id="yes7" onclick="changePrice7('16oz')">16oz</a>
+          <a href="#" id="no7" onclick="changePrice7('20oz')">20oz</a>
+        </div>
+      </div> </p>
+    <div class="align"> 
+        <img src="https://tse4.mm.bing.net/th/id/OIP.LAiaINA82OYpt5E-CIPxLwHaHa?rs=1&pid=ImgDetMain" id="notCoffee" width="100" height="100">
+        <h3>Not Coffee</h3>
+    </div>
+    <h5>Mineral Water</h5> <p>$3</p>
+    <h5>Regular Water</h5> <p>$1</p>
+   <div class="alien"> 
+    <h5>Hot Chocolate</h5> <p>$4</p> 
+  </div>
+    <h5>Steamer</h5> 
+    <div class="align"> 
+        <img src="https://cdn.shopify.com/s/files/1/1677/2601/files/cup-of-jasmine-green-tea.png?v=1664907333&auto=webp&optimize=high&width=1200" id="tea" width="100" height="100">
+        <h3>Tea</h3>
+    </div>
+    <div class="align">
+  <img src="https://www.webstaurantstore.com/images/products/large/69556/2245238.jpg" width="50" height="50">
+    <h5>Earl Grey</h5> <p>$4</p>
+    </div>
+    <div class="align">
+    <img src="https://cdn.shopify.com/s/files/1/1677/2601/files/cup-of-jasmine-green-tea.png?v=1664907333&auto=webp&optimize=high&width=1200" id="tea" width="50" height="50">
+    <h5>Jasmine</h5> <p>$4</p>
+    </div>
+    <div class="align">
+    <img src="https://www.acouplecooks.com/wp-content/uploads/2021/09/How-to-Make-Matcha-013s.jpg" width="50" height="50">
+    <h5>Matcha Super Green</h5> <p>$4</p>
+  </div>
+    <h5>Tea of the Month</h5><p>$4</p>
+    
+
+</div>
+
+
+</body>
+</html>
+
+    <script src="script.js"></script>
+  </body>
+</html>
