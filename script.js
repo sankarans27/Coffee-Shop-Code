@@ -100,9 +100,12 @@ function changePrice(size) {
     var fee = 0.75;
     var price6 = parseFloat(document.getElementById("price6").innerText.replace('$', '').split('-')[0]);
     
-    if (milk === "Oat $0.75" || milk === "Almond $0.75") {
+    if (milk === "1" || milk === "2") {
         var totalPrice = price6 + fee;
-        document.getElementByClassName("altMilk").innerHTML = "$" + totalPrice.toFixed(2);
+        document.getElementById("price7").innerHTML = "$" + totalPrice.toFixed(2);
+    } else {
+        var totalPrice = price6 - fee;
+        document.getElementById("price7").innerHTML = "$" + price6.toFixed(2);
     }
 }
 console.log(milk)
